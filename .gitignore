@@ -1,5 +1,9 @@
-.env
-/node_modules
-/dist
 .idea
 .vscode
+.env
+
+/node_modules/
+/dist
+/examples
+
+package-lock.json

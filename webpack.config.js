@@ -1,6 +1,7 @@
 const {resolve} = require("path");
 const TerserWebpackPlugin = require("terser-webpack-plugin");
 const path = require("path");
+require('dotenv').config({ path: './.env' });
 
 const isProd = process.env.NODE_ENV === "production";
 
@@ -21,8 +22,7 @@ const config = {
       "os": false,
       "net":false,
       "tls":false,
-      "bufferutil":false,
-      "utf-8-valiadate":false,
+      "utf-8-validate":false,
       "buffer": false,
       "util": false,
       "http": false,
