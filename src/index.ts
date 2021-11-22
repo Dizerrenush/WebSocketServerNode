@@ -12,13 +12,11 @@ const port = process.env.PORT || 3000;
 wsServer.on('connection', (ws: WebSocket) => {
 
     ws.on('message', (message: string) => {
-
         wsServer.clients.forEach(client => client.send(message));
     });
 
 });
 
 server.listen(port, () => {
-    // @ts-ignore
-    console.log(`Server started on port ${server.address().port}`);
+    console.log(`Server started :${port}`);
 });
